@@ -1,0 +1,65 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--cor-p1);
+  overflow: hidden; /* para não estourar o container no responsivo */
+}
+
+.depoimento img {
+  width: 100%; /* ocupa 100% da larga da div */
+  height: 100%; /* ocupa 100% da larga da div */
+  object-fit: cover; /* para não distorcer a imagem no responsivo */
+  border-radius: 0px;
+}
+
+.depoimento-conteudo {
+  padding: 80px;
+  align-self: center;
+}
+
+.depoimento-conteudo p {
+  max-width: 32ch;
+  font: 2rem/1.25 "Merriweather", serif;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.depoimento p::before,
+.depoimento p::after {
+  font-size: 5rem;
+  color: var(--cor-p2);
+  position: absolute;
+}
+
+.depoimento p::before {
+  content: "“";
+  left: -50px;
+  top: -20px;
+}
+
+.depoimento p::after {
+  content: "”";
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .depoimento img {
+    max-height: 200px;
+  }
+  
+  .depoimento-conteudo {
+    padding: 40px;
+    justify-self: center;
+  }
+  
+  .depoimento p::before,
+  .depoimento p::after {
+    position: static;
+    font-size: 2rem;
+    color: var(--cor-11);
+  }
+}

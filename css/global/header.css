@@ -69,3 +69,14 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 500px) {
+  .header {
+    column-gap: 50px;
+  }
+
+  .header,
+  .header-menu {
+    justify-content: center;
+  }
+}
