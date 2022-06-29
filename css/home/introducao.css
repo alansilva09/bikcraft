@@ -51,9 +51,3 @@
     width: 100%;
   }
 }
-
-@media (max-width: 500px) {
-  .introducao img {
-    height: 300px;
-  }
-}
