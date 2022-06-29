@@ -12,6 +12,10 @@
   padding-bottom: 20px;
 }
 
+.header img {
+  min-width: max-content;
+}
+
 .header-menu {
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +28,7 @@
   position: relative;
 }
 
-.header-menu a:after {
+.header-menu a::after {
   content: "";
   display: block;
   height: 2px;
@@ -54,7 +58,7 @@
     background: var(--cor-10);
   }
 
-  .header a:after {
+  .header a::after {
     display: none;
   }
 }

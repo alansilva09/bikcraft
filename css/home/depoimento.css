@@ -6,8 +6,8 @@
 }
 
 .depoimento img {
-  width: 100%; /* ocupa 100% da larga da div */
-  height: 100%; /* ocupa 100% da larga da div */
+  width: 100%;
+  height: 100%;
   object-fit: cover; /* para não distorcer a imagem no responsivo */
   border-radius: 0px;
 }
