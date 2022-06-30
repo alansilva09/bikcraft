@@ -1,7 +1,7 @@
 .depoimento {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: var(--cor-p1);
+  background: var(--cor-p1) url(../../img/dec/bottom-right-p.svg) no-repeat bottom 40px right 40px;
   overflow: hidden; /* para não estourar o container no responsivo */
 }
 
@@ -41,6 +41,18 @@
   content: "”";
 }
 
+@media (min-width: 1200px) {
+  .depoimento img {
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .depoimento {
+    background: var(--cor-p1);
+  }
+}
+
 @media (max-width: 800px) {
   .depoimento {
     grid-template-columns: 1fr;
@@ -48,7 +60,7 @@
   }
 
   .depoimento img {
-    max-height: 200px;
+    max-height: 300px;
   }
   
   .depoimento-conteudo {
