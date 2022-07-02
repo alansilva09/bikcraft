@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Bikcraft</title>
     <meta name="description" content="Contato.">
-    <link rel="preload" href="./css/style.css" as="style">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add("js");</script>
   </head>
 
   <body id="contato">
@@ -38,7 +40,7 @@
         </div>
       </div>
 
-      <div class="contato container">
+      <div class="contato container fadeInDown" data-anime="200">
         <section class="contato-dados" aria-label="Endereço">
           <h2 class="font-1-m cor-0">Loja Online</h2>
           <div class="contato-endereco font-2-s cor-4">
@@ -152,5 +154,8 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
